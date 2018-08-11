@@ -33,24 +33,26 @@ h6 {
 /* Headwrap */
 
 .headwrap {
+    width: 100%;
     background: url(../img/bg.jpg) #0b333f no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 600px;
-    z-index: 10000;
-    padding-top: 18%;
-    text-align: center;
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   min-height: 540px;
+   z-index: 10000;
+   padding: 200px 0px;
+   padding-top: 160px;
+   text-align: center;
+   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+   -moz-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+   -webkit-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
 }
 
 .headwrap h1 {
     color: #FFFFFF;
     font-family: "Patua One", cursive;
-    font-size: 6em;
+    font-size: 7em;
     font-weight: 100;
     margin: 0 0;
 }
@@ -58,7 +60,7 @@ h6 {
 .headwrap h2 {
     color: #FFFFFF;
     font-family: "Open Sans", sans serif;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: normal;
     margin: 0.5em 0;
     text-shadow: 1px 1px 1px #333333;
@@ -69,13 +71,18 @@ h6 {
 }
 
 .picture {
-    height: 120px;
-    width: 120px;
+    height: 200px;
+    width: 200px;
     border-radius: 100%;
     margin-top: -60px;
     border: 3px solid #fff;
 }
-
+.yellow{
+    color:yellow;
+}
+.grey{
+    background: #efefef;
+}
 
 /* Social icons */
 
@@ -103,12 +110,34 @@ h6 {
 }
 
 .feature {
-    background: url(../img/yellow.png) repeat 0 0;
+    background: #2d2d2d;
     height: auto;
     z-index: 500;
+    padding: 80px 0px;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+}
+.icon-group-circled:before {
+    content: '\e090';
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: 'fontello';
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 0.2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: 0.2em;
+    /* font-size: 120%; */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
 .feature article {
@@ -118,10 +147,9 @@ h6 {
 }
 
 .feature article p {
-    font-family: "Patua One", cursive;
-    font-size: 2.2em;
+    font-size: 20px;
     margin-bottom: 4%;
-    line-height: 1.35;
+    font-family: monospace, fantasy;
     color: #fff;
 }
 
@@ -162,11 +190,14 @@ h6 {
 .portfolio .align {
     text-align: center;
     margin-top: 10px;
-    font-size: 6em;
+    font-size: 8em;
 }
 
 .portfolio #folio-headline {
     text-align: center;
+    font-size: 4em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
 }
 
 
@@ -206,4 +237,5 @@ footer {
     padding: 1%;
     border-top: 1px solid #aaa;
     text-align: center;
+    font-size: 14px;
 }
